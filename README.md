@@ -8,24 +8,28 @@
 | `verifyConditions` | Verify the presence of the `VERCEL_TOKEN` and `VERCEL_TEAM_ID` environment variables |
 | `publish`          | Publish the project to vercel.                                                  |                                                 |
 
+
 ## Install
 
-
-with npm:
+**with npm:**
 ```bash
-npm install @semantic-release/vercel
+npm install --save-dev @semantic-release/vercel
 ```
 
-with pnpm:
+**with pnpm:**
 ```bash
-pnpm add @semantic-release/vercel
+pnpm add -D @semantic-release/vercel
 ```
 
-with yarn:
+**with yarn:**
 ```bash
-yarn add @semantic-release/vercel
+yarn add --dev @semantic-release/vercel
 ```
 
+**with bun:**
+```bash
+bun add -d @semantic-release/vercel
+```
 
 ## Usage
 
@@ -55,6 +59,9 @@ The Vercel [token](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-to
 | `VERCEL_TEAM_ID` | Vercel team id obtained via [Vercel site](https://vercel.com/docs/accounts/create-a-team) |
 
 ### Options
+
+A plugin configuration can be specified by wrapping the name and an options object in an array. Options configured this way will be passed only to that specific plugin.
+
 
 | Option | Type | Description | Default |
 |--------|------|-------------|---------|
