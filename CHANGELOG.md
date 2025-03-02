@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.0...v1.1.0) (2025-03-02)
+
+
+### Features
+
+* v1.0.0 ([e4583fc](https://github.com/KernelPanic92/semantic-release-vercel/commit/e4583fcaad5b4436b01d2c8d47df7e55dbb43d17))
+
 # 1.0.0 (2025-03-02)
 
 
