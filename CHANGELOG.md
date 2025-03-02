@@ -1,3 +1,10 @@
+# [1.0.0-next.2](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.0-next.1...v1.0.0-next.2) (2025-03-02)
+
+
+### Bug Fixes
+
+* fixed repository url ([998273d](https://github.com/KernelPanic92/semantic-release-vercel/commit/998273d4d5518d41e6b642f6c99673b80e16c0c3))
+
 # 1.0.0-next.1 (2025-03-02)
 
 
