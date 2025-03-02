@@ -4,11 +4,7 @@
 const releaseConfig = {
   branches: [
     "main",
-    {
-      name: "next",
-      channel: "next",
-      prerelease: true,
-    },
+    "next",
     "+([0-9])?(.{+([0-9]),x}).x",
   ],
   plugins: [
