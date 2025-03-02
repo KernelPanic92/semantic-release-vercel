@@ -6,6 +6,7 @@
 /out-tsc
 /bazel-out
 /coverage
+/.coverage
 
 # Node
 /node_modules

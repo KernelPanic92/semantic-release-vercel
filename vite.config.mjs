@@ -6,6 +6,11 @@ import checker from "vite-plugin-checker";
 export default defineConfig({
   test: {
     includeSource: ['src/**/*.ts'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['lcov'],
+      cleanOnRerun: true,
+    },
   },
   build: {
     lib: {
