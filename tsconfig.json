@@ -17,7 +17,11 @@
       "module": "ESNext",
       "target": "ESNext",
       "useDefineForClassFields": false,
-      "lib": ["ES2022", "dom"]
+      "lib": ["ES2022", "dom"],
+      "types": [
+        "vitest",
+        "vitest/importMeta",
+      ],
     },
     "angularCompilerOptions": {
       "enableI18nLegacyMessageIdFormat": false,

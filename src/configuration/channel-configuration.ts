@@ -1,4 +1,4 @@
-import { SemanticReleaseVercelDeploymentOptions } from "./deployment-options";
+import { SemanticReleaseVercelDeploymentOptions } from './deployment-options';
 
 /**
  * Object for release settings on Vercel for the specified Semantic Release distribution channel.

@@ -1,3 +1,3 @@
-export { publish, verifyConditions } from "./hooks";
-export * from "./configuration";
+export * from './configuration';
 export * from './constants';
+export { publish, verifyConditions } from './hooks';

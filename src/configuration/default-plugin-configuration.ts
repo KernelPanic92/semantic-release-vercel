@@ -1,26 +1,26 @@
-import type { PluginConfiguration } from "./plugin-configuration";
+import type { PluginConfiguration } from './plugin-configuration';
 
 export const defaultPluginConfiguration: PluginConfiguration = {
   channels: [
     {
       channel: false,
-      target: "production",
+      target: 'production',
     },
     {
-      channel: "next",
-      target: "preview",
+      channel: 'next',
+      target: 'preview',
     },
     {
-      channel: "next-major",
-      target: "preview",
+      channel: 'next-major',
+      target: 'preview',
     },
     {
-      channel: "beta",
-      target: "beta",
+      channel: 'beta',
+      target: 'beta',
     },
     {
-      channel: "alpha",
-      target: "alpha",
+      channel: 'alpha',
+      target: 'alpha',
     },
   ],
 };

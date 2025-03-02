@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Dev tools
+.prettierrc.json
+.releaserc.js
+eslint.config.mjs
+vite.config.mjs

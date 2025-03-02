@@ -4,6 +4,9 @@ import dts from "vite-plugin-dts";
 import checker from "vite-plugin-checker";
 
 export default defineConfig({
+  test: {
+    includeSource: ['src/**/*.ts'],
+  },
   build: {
     lib: {
       name: "index",
