@@ -4,13 +4,13 @@
   "description": "A semantic-release plugin for deploying projects to Vercel",
   "sideEffects": false,
   "module": "./dist/index.mjs",
-  "typings": "./dist/index.d.mts",
+  "typings": "./dist/index.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./dist/index.d.mts",
+      "types": "./dist/index.d.ts",
       "esm": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     }
