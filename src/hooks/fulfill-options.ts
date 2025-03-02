@@ -1,12 +1,12 @@
-import { defaultPluginConfiguration, PluginConfiguration } from "../configuration";
-import { merge } from "lodash-es";
+import { defaultsDeep } from 'lodash-es';
+
+import {
+  defaultPluginConfiguration,
+  PluginConfiguration,
+} from '../configuration';
 
 export function fulfillOptions(
-        pluginConfiguration: PluginConfiguration,
-  ): PluginConfiguration {
-   return merge(
-       {},
-       defaultPluginConfiguration,
-       pluginConfiguration
-     );
-  }
+  pluginConfiguration: PluginConfiguration,
+): PluginConfiguration {
+  return defaultsDeep({}, pluginConfiguration, defaultPluginConfiguration);
+}

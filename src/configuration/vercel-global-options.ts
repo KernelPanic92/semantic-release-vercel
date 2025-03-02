@@ -1,7 +1,8 @@
-import { VercelClientOptions } from "@vercel/client";
-import { SemanticReleaseVercelDeploymentOptions } from "./deployment-options";
+import { VercelClientOptions } from '@vercel/client';
+
+import { SemanticReleaseVercelDeploymentOptions } from './deployment-options';
 
 export interface VercelGlobalOptions {
-    client?: VercelClientOptions;
-    deployment?: SemanticReleaseVercelDeploymentOptions;
-  }
+  client?: VercelClientOptions;
+  deployment?: SemanticReleaseVercelDeploymentOptions;
+}
