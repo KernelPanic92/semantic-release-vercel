@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.3...v1.1.0) (2025-03-03)
+
+
+### Features
+
+* used semantic release error api ([697d407](https://github.com/KernelPanic92/semantic-release-vercel/commit/697d407f0be22e99fb582887dfa89aa8975d457a))
+
 ## [1.0.3](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.2...v1.0.3) (2025-03-03)
 
 
