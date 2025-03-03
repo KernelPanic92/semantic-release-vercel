@@ -1,4 +1,4 @@
-# @semantic-release/vercel
+# semantic-release-vercel
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to publish a [vercel](https://vercel.com/) project using [vercel/client](https://github.com/vercel/vercel/blob/main/packages/client).
 
@@ -13,22 +13,22 @@
 
 **with npm:**
 ```bash
-npm install --save-dev @semantic-release/vercel
+npm install --save-dev semantic-release-vercel
 ```
 
 **with pnpm:**
 ```bash
-pnpm add -D @semantic-release/vercel
+pnpm add -D semantic-release-vercel
 ```
 
 **with yarn:**
 ```bash
-yarn add --dev @semantic-release/vercel
+yarn add --dev semantic-release-vercel
 ```
 
 **with bun:**
 ```bash
-bun add -d @semantic-release/vercel
+bun add -d semantic-release-vercel
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/vercel",
+    "semantic-release-vercel",
   ]
 }
 ```
@@ -124,7 +124,7 @@ The plugin uses the [`vercel` client](https://github.com/vercel/vercel/blob/main
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/vercel"
+      "semantic-release-vercel"
     ]
   ]
 }
@@ -137,7 +137,7 @@ The plugin uses the [`vercel` client](https://github.com/vercel/vercel/blob/main
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/vercel",
+      "semantic-release-vercel",
       {
         "channels": [
             {
@@ -162,7 +162,7 @@ The plugin uses the [`vercel` client](https://github.com/vercel/vercel/blob/main
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/vercel",
+      "semantic-release-vercel",
       {
         "globalOptions": {
             "deployment": {

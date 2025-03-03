@@ -1,5 +1,5 @@
 {
-  "name": "@semantic-release/vercel",
+  "name": "semantic-release-vercel",
   "version": "1.0.0",
   "description": "A semantic-release plugin for deploying projects to Vercel",
   "sideEffects": false,
