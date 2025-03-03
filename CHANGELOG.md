@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.2...v1.0.3) (2025-03-03)
+
+
+### Bug Fixes
+
+* **build:** managed artifacts ([b6a32f0](https://github.com/KernelPanic92/semantic-release-vercel/commit/b6a32f0ba3a64d6bbe18098f64d85709b24b7bab))
+* **ci:** bump artifact action version ([167ff84](https://github.com/KernelPanic92/semantic-release-vercel/commit/167ff8468e96c8d1104add9bd33ee210489cc19e))
+
 ## [1.0.2](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.1...v1.0.2) (2025-03-03)
 
 
