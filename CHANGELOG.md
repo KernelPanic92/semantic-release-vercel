@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.1...v1.0.2) (2025-03-03)
+
+
+### Bug Fixes
+
+* fixed dist in npmignore ([cba25b1](https://github.com/KernelPanic92/semantic-release-vercel/commit/cba25b12d7b1b0b3c24c2b5fcab92bb64ca537df))
+
 ## [1.0.1](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.0...v1.0.1) (2025-03-03)
 
 
