@@ -21,6 +21,7 @@ export default defineConfig({
       treeshake: true,
     },
     rollupOptions: {
+      treeshake: true,
       output: {
         format: "es",
         dir: "dist",
