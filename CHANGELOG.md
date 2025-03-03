@@ -1,3 +1,26 @@
+## [1.0.1](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.0...v1.0.1) (2025-03-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/client to v15 ([95a59c7](https://github.com/KernelPanic92/semantic-release-vercel/commit/95a59c77ed13ca979d6c89f1c2ca7e936d7eefd5))
+* **deps:** update dependency @vercel/client to v15 ([d255583](https://github.com/KernelPanic92/semantic-release-vercel/commit/d2555835f290fc98ed88caf5b9317b6176e6ff62))
+
+# 1.0.0 (2025-03-03)
+
+
+### Bug Fixes
+
+* fixed package export types ([a19f61c](https://github.com/KernelPanic92/semantic-release-vercel/commit/a19f61c10562fe09ee611bc0ccc1d98d1b6e581c))
+* fixed repository url ([998273d](https://github.com/KernelPanic92/semantic-release-vercel/commit/998273d4d5518d41e6b642f6c99673b80e16c0c3))
+
+
+### Features
+
+* initial version ([6862552](https://github.com/KernelPanic92/semantic-release-vercel/commit/6862552a395c8942fac1b8059827a801bcd2ee9b))
+* prepared to npm deploy ([1f4c435](https://github.com/KernelPanic92/semantic-release-vercel/commit/1f4c43559ec58dd700e80139cd549fa5c0ceacee))
+* v1.0.0 ([e4583fc](https://github.com/KernelPanic92/semantic-release-vercel/commit/e4583fcaad5b4436b01d2c8d47df7e55dbb43d17))
+
 # 1.0.0 (2025-03-02)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-vercel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A semantic-release plugin for deploying projects to Vercel",
   "sideEffects": false,
   "module": "./dist/index.mjs",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@vercel/build-utils": "^9.0.1",
-    "@vercel/client": "13.5.4",
+    "@vercel/client": "15.1.2",
     "@vercel/routing-utils": "^5.0.0",
     "bytes": "^3.1.2",
     "lodash-es": "^4.17.21",
