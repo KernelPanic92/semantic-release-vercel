@@ -7,6 +7,9 @@ import {
 import bytes from 'bytes';
 import { Signale } from 'signale';
 
+import { getError } from '../../errors/get-error';
+import { stringify } from '../../utils';
+
 export const deploy = async (
   clientOptions: VercelClientOptions,
   deploymentOptions: DeploymentOptions,
@@ -22,7 +25,7 @@ export const deploy = async (
         break;
       case 'file-count': {
         const { total, missing } = payload;
-        logger.debug(`Total files ${total.size}, ${missing.length} changed`);
+        logger.info(`Total files ${total.size}, ${missing.length} changed`);
         break;
       }
       case 'file-uploaded':
@@ -50,13 +53,13 @@ export const deploy = async (
         logger.info('Alias assigned');
         break;
       case 'warning':
-        logger.warn('Warning', payload);
+        logger.warn('Warning', stringify(payload));
         break;
       case 'notice':
-        logger.info('Notice', payload);
+        logger.info('Notice', stringify(payload));
         break;
       case 'tip':
-        logger.note('Tip', payload);
+        logger.note('Tip', stringify(payload));
         break;
       case 'canceled':
         logger.info('Canceled');
@@ -73,20 +76,16 @@ export const deploy = async (
       case 'checks-conclusion-succeeded':
         logger.success('Checks conclusion succeeded');
         break;
-      case 'checks-conclusion-failed':
-        logger.fatal('Checks conclusion failed', payload);
-        break;
       case 'checks-conclusion-skipped':
         logger.info('Checks conclusion skipped');
         break;
       case 'checks-conclusion-canceled':
         logger.warn('Checks conclusion canceled');
         break;
+      case 'checks-conclusion-failed':
+        throw getError('EVERCELCHECKSCONCLUSIONFAILED', { payload });
       case 'error': {
-        const { errorCode, errorMessage } = payload;
-        const error = `Deployment aborted due to ${errorCode}: ${errorMessage}`;
-        logger.error(error);
-        throw new Error(error);
+        throw getError('EVERCELDEPLOY', { payload });
       }
     }
   }
