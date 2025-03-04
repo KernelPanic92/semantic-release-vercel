@@ -13,7 +13,7 @@ importers:
         version: 4.0.0
       '@vercel/build-utils':
         specifier: ^10.3.1
-        version: 10.3.1
+        version: 10.3.2
       '@vercel/client':
         specifier: 15.1.2
         version: 15.1.2
@@ -809,6 +809,9 @@ packages:
 
   '@vercel/build-utils@10.3.1':
     resolution: {integrity: sha512-aWVzwW4UYwrO0yxHQBSiFn/P665S3pORKTRbmdQ/DXMvzsvGtmyG2zeSFApV2WJ3fH46V74i8Lv9IouhmYkbVQ==}
+
+  '@vercel/build-utils@10.3.2':
+    resolution: {integrity: sha512-i/uiD9W4UL+ZvgZT9R2hVb2H+/SjHo+ntap4wqHr83BZtjtEKOq5soUZe+3IMXq0wG6xHa3nrNk660ppDxr5KQ==}
 
   '@vercel/client@15.1.2':
     resolution: {integrity: sha512-cuiWfa1+S6GmheFeiNa8JODROIZfhcCR1JKt00CxhTphSoPL/Pb4JEH2Zih0BP/YJj99D28e2KmDXPWYQcCyAw==}
@@ -3641,6 +3644,8 @@ snapshots:
       eslint-visitor-keys: 4.2.0
 
   '@vercel/build-utils@10.3.1': {}
+
+  '@vercel/build-utils@10.3.2': {}
 
   '@vercel/client@15.1.2':
     dependencies:
