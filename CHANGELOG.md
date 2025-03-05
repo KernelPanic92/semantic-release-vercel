@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.1.0...v1.2.0) (2025-03-05)
+
+
+### Features
+
+* improved vercel team id check ([4762d65](https://github.com/KernelPanic92/semantic-release-vercel/commit/4762d65191031186fe1150b018ce219ee51617ed))
+
 # [1.1.0](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.0.3...v1.1.0) (2025-03-03)
 
 
