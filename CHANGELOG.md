@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.2.0...v1.2.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* excluded extraneous fields for deploy ([eb83195](https://github.com/KernelPanic92/semantic-release-vercel/commit/eb83195869f9e96a05d554edccc92e3a7c99fff0))
+
 # [1.2.0](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.1.0...v1.2.0) (2025-03-05)
 
 
