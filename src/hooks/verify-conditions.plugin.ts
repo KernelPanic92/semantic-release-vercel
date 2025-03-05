@@ -26,11 +26,7 @@ export async function verifyConditions(
   }
 
   const vercelTeamId = client.teamId;
-  if (isNil(vercelTeamId)) {
-    errors.push(getError('ENOVERCELTEAMID'));
-  } else if (isEmpty(trim(vercelTeamId))) {
-    errors.push(getError('EINVALIDVERCELTEAMID'));
-  } else if (!startsWith(vercelTeamId, 'team_')) {
+  if (!isNil(vercelTeamId) && !startsWith(vercelTeamId, 'team_')) {
     context.logger.warn(
       "The Vercel Team Id does not begin with 'team_'. Are you sure it is correct?",
     );

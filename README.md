@@ -49,7 +49,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 
 ### Vercel authentication
 
-The Vercel [token](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token) and Vercel [Team ID](https://vercel.com/docs/accounts/create-a-team) authentication configuration are both **required** and can be set via [environment variables](#environment-variables) or [options](#options).
+The Vercel [token](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token) is **required** and can be set via [environment variables](#environment-variables) or [options](#options).
 
 ### Environment variables
 

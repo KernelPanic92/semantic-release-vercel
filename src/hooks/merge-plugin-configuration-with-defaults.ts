@@ -1,4 +1,6 @@
-import { defaultsDeep } from 'lodash-es';
+import http from 'http';
+import https from 'https';
+import { defaultsDeep, isNil, startsWith } from 'lodash-es';
 import { VerifyConditionsContext } from 'semantic-release';
 
 import {
@@ -22,10 +24,21 @@ export const mergePluginConfigurationWithDefaults = (
     },
   };
 
-  return defaultsDeep(
+  const result: PluginConfiguration = defaultsDeep(
     {},
     options,
     defaultPluginConfiguration,
     runtimePluginConfiguration,
   );
+
+  if (isNil(result.globalOptions.client.agent)) {
+    const apiUrl = result.globalOptions.client.apiUrl;
+    const isHttps = isNil(apiUrl) || startsWith(apiUrl, 'https');
+    const agent = isHttps
+      ? new https.Agent({ keepAlive: true })
+      : new http.Agent({ keepAlive: true });
+    result.globalOptions.client.agent = agent;
+  }
+
+  return result;
 };
