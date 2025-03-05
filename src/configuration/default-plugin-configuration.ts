@@ -1,6 +1,7 @@
+import { DeepPartial } from '../utils';
 import type { PluginConfiguration } from './plugin-configuration';
 
-export const defaultPluginConfiguration: PluginConfiguration = {
+export const defaultPluginConfiguration: DeepPartial<PluginConfiguration> = {
   channels: [
     {
       channel: false,
