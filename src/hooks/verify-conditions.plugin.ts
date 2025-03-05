@@ -1,5 +1,5 @@
 import SemanticReleaseError from '@semantic-release/error';
-import { isEmpty, isNil, trim } from 'lodash-es';
+import { isEmpty, isNil, startsWith, trim } from 'lodash-es';
 import { VerifyConditionsContext } from 'semantic-release';
 
 import { PluginConfiguration } from '../configuration';
@@ -29,6 +29,10 @@ export async function verifyConditions(
     errors.push(getError('ENOVERCELTEAMID'));
   } else if (isEmpty(trim(vercelTeamId))) {
     errors.push(getError('EINVALIDVERCELTEAMID'));
+  } else if (!startsWith(vercelTeamId, 'team_')) {
+    context.logger.warn(
+      "The Vercel Team Id does not begin with 'team_'. Are you sure it is correct?",
+    );
   }
 
   if (isEmpty(errors)) {
