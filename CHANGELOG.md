@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.2.1...v1.2.2) (2025-03-05)
+
+
+### Bug Fixes
+
+* fixed http agent and marked team id as optional ([7192550](https://github.com/KernelPanic92/semantic-release-vercel/commit/7192550260746eb77d8b7981cb4c7683765fb5d9))
+
 ## [1.2.1](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.2.0...v1.2.1) (2025-03-05)
 
 
