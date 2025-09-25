@@ -13,7 +13,7 @@ importers:
         version: 4.0.0
       '@vercel/build-utils':
         specifier: ^10.3.1
-        version: 10.3.1
+        version: 10.6.7
       '@vercel/client':
         specifier: 15.1.2
         version: 15.1.2
@@ -810,6 +810,9 @@ packages:
   '@vercel/build-utils@10.3.1':
     resolution: {integrity: sha512-aWVzwW4UYwrO0yxHQBSiFn/P665S3pORKTRbmdQ/DXMvzsvGtmyG2zeSFApV2WJ3fH46V74i8Lv9IouhmYkbVQ==}
 
+  '@vercel/build-utils@10.6.7':
+    resolution: {integrity: sha512-DVV7zLsHvG/7NgWuo7DAZ6Gnrfd08hKEeQ0URkgv+4g0YXmv+JW4cZkJ7pW0fwoszuoqUfGRwIjTG6LT4TDEOg==}
+
   '@vercel/client@15.1.2':
     resolution: {integrity: sha512-cuiWfa1+S6GmheFeiNa8JODROIZfhcCR1JKt00CxhTphSoPL/Pb4JEH2Zih0BP/YJj99D28e2KmDXPWYQcCyAw==}
     engines: {node: '>= 18'}
@@ -1199,6 +1202,15 @@ packages:
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -3591,7 +3603,7 @@ snapshots:
       '@typescript-eslint/types': 8.25.0
       '@typescript-eslint/typescript-estree': 8.25.0(typescript@5.8.2)
       '@typescript-eslint/visitor-keys': 8.25.0
-      debug: 4.4.0
+      debug: 4.4.3
       eslint: 9.21.0(jiti@2.4.2)
       typescript: 5.8.2
     transitivePeerDependencies:
@@ -3646,6 +3658,8 @@ snapshots:
       eslint-visitor-keys: 4.2.0
 
   '@vercel/build-utils@10.3.1': {}
+
+  '@vercel/build-utils@10.6.7': {}
 
   '@vercel/client@15.1.2':
     dependencies:
@@ -4084,6 +4098,10 @@ snapshots:
   de-indent@1.0.2: {}
 
   debug@4.4.0:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
 
