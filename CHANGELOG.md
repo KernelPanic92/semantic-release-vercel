@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.2.2...v1.2.3) (2025-11-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/client to v15.3.15 ([20bb3e2](https://github.com/KernelPanic92/semantic-release-vercel/commit/20bb3e236fb46a68230de81557cce47b72a0e5ba))
+
 ## [1.2.2](https://github.com/KernelPanic92/semantic-release-vercel/compare/v1.2.1...v1.2.2) (2025-03-05)
 
 
