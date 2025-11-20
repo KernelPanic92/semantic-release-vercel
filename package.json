@@ -88,5 +88,5 @@
   "bugs": {
     "url": "https://github.com/KernelPanic92/semantic-release-vercel/issues"
   },
-  "packageManager": "pnpm@10.21.0"
+  "packageManager": "pnpm@10.23.0"
 }
