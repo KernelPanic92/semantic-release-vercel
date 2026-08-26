@@ -106,8 +106,8 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(@types/node@22.13.8)(jiti@2.4.2)
       vite-plugin-checker:
-        specifier: ^0.9.0
-        version: 0.9.0(eslint@9.39.1(jiti@2.4.2))(meow@13.2.0)(optionator@0.9.4)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2))
+        specifier: ^0.14.0
+        version: 0.14.5(eslint@9.39.1(jiti@2.4.2))(meow@13.2.0)(optionator@0.9.4)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2))
       vite-plugin-dts:
         specifier: ^4.5.3
         version: 4.5.3(@types/node@22.13.8)(rollup@4.34.9)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2))
@@ -125,12 +125,20 @@ packages:
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/code-frame@7.29.7':
+    resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.29.7':
+    resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/parser@7.26.9':
@@ -1142,9 +1150,9 @@ packages:
     resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
     engines: {node: '>= 16'}
 
-  chokidar@4.0.3:
-    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
-    engines: {node: '>= 14.16.0'}
+  chokidar@5.0.0:
+    resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
+    engines: {node: '>= 20.19.0'}
 
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
@@ -1429,6 +1437,7 @@ packages:
   eslint@9.39.1:
     resolution: {integrity: sha512-BhHmn2yNOFA9H9JmmIVKJmd288g9hrVRDkdoIgRCRuSySRUHH7r/DI6aAXW9T1WwUuY3DFgrcaqB+deURBLR5g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1512,14 +1521,6 @@ packages:
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
-
-  fdir@6.4.3:
-    resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   figures@2.0.0:
     resolution: {integrity: sha512-Oa2M9atig69ZkfwiApY8F2Yy+tzMbazyvqv21R0NsSC8floSOC09BbT1ITWAdoMGQvJ/aZnR1KMwdx9tvHnTNA==}
@@ -1629,6 +1630,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -1641,6 +1643,7 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   global-directory@4.0.1:
@@ -2397,6 +2400,10 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
   pify@3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
@@ -2435,6 +2442,9 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
+  proper-lockfile@4.1.2:
+    resolution: {integrity: sha512-TjNPblN4BwAWMXU8s9AEz4JmQxnD1NNL7bNOY/AKUzyamc379FWASUhc/K1pL2noVb+XmZKLL68cjzLsiOAMaA==}
+
   proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
 
@@ -2471,9 +2481,9 @@ packages:
   readable-stream@2.3.8:
     resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
 
-  readdirp@4.1.2:
-    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
-    engines: {node: '>= 14.18.0'}
+  readdirp@5.1.1:
+    resolution: {integrity: sha512-Kko+Y5XQ6fM+Ce3dq3m9YGxnacYZYl9cA1wZjaF3Vbry2L3i1qVg8+CAgNPsXRArPMUMCaOR7oa9Nqntc43JKA==}
+    engines: {node: '>= 20.19.0'}
 
   registry-auth-token@5.1.0:
     resolution: {integrity: sha512-GdekYuwLXLxMuFTwAPg5UKGLW/UXzQrZvH/Zj791BQif5T05T0RsaLfHc9q3ZOKi7n+BoprPD9mJ0O0k4xzUlw==}
@@ -2752,10 +2762,6 @@ packages:
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
-  tinyglobby@0.2.12:
-    resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
-    engines: {node: '>=12.0.0'}
-
   tinypool@1.0.2:
     resolution: {integrity: sha512-al6n+QEANGFOMf/dmUMsuS5/r9B06uwlyNjZZql/zv8J7ybHCgoihBNORZCY2mzUuAnomQa2JdhyHKzZxPCrFA==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -2873,20 +2879,19 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite-plugin-checker@0.9.0:
-    resolution: {integrity: sha512-gf/zc0KWX8ATEOgnpgAM1I+IbvWkkO80RB+FxlLtC5cabXSesbJmAUw6E+mMDDMGIT+VHAktmxJZpMTt3lSubQ==}
-    engines: {node: '>=14.16'}
+  vite-plugin-checker@0.14.5:
+    resolution: {integrity: sha512-c9lQ92eisUO+F7Fd93aelojmiOS+NQpPgQ1XR2LTQHox1/laZf4yAoQj+L3RA9Vgh10e2nFd9b8r2LLyYZsbpA==}
+    engines: {node: '>=20.19.0'}
     peerDependencies:
-      '@biomejs/biome': '>=1.7'
-      eslint: '>=7'
-      meow: ^13.2.0
-      optionator: ^0.9.1
-      stylelint: '>=16'
+      '@biomejs/biome': '>=2.4.12'
+      eslint: '>=9.39.4'
+      meow: ^13.2.0 || ^14.0.0
+      optionator: ^0.9.4
+      oxlint: '>=1'
+      stylelint: '>=16.26.1'
       typescript: '*'
-      vite: '>=2.0.0'
-      vls: '*'
-      vti: '*'
-      vue-tsc: ~2.2.2
+      vite: '>=5.4.21'
+      vue-tsc: ~2.2.10 || ^3.0.0
     peerDependenciesMeta:
       '@biomejs/biome':
         optional: true
@@ -2896,13 +2901,11 @@ packages:
         optional: true
       optionator:
         optional: true
+      oxlint:
+        optional: true
       stylelint:
         optional: true
       typescript:
-        optional: true
-      vls:
-        optional: true
-      vti:
         optional: true
       vue-tsc:
         optional: true
@@ -3073,9 +3076,17 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
+  '@babel/code-frame@7.29.7':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.29.7
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
   '@babel/helper-string-parser@7.25.9': {}
 
   '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.29.7': {}
 
   '@babel/parser@7.26.9':
     dependencies:
@@ -4190,9 +4201,9 @@ snapshots:
 
   check-error@2.1.1: {}
 
-  chokidar@4.0.3:
+  chokidar@5.0.0:
     dependencies:
-      readdirp: 4.1.2
+      readdirp: 5.1.1
 
   chownr@1.1.4: {}
 
@@ -4595,10 +4606,6 @@ snapshots:
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
-
-  fdir@6.4.3(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   figures@2.0.0:
     dependencies:
@@ -5305,6 +5312,8 @@ snapshots:
 
   picomatch@4.0.2: {}
 
+  picomatch@4.0.7: {}
+
   pify@3.0.0: {}
 
   pkg-conf@2.1.0:
@@ -5343,6 +5352,12 @@ snapshots:
       parse-ms: 4.0.0
 
   process-nextick-args@2.0.1: {}
+
+  proper-lockfile@4.1.2:
+    dependencies:
+      graceful-fs: 4.2.11
+      retry: 0.12.0
+      signal-exit: 3.0.7
 
   proto-list@1.2.4: {}
 
@@ -5390,7 +5405,7 @@ snapshots:
       string_decoder: 1.1.1
       util-deprecate: 1.0.2
 
-  readdirp@4.1.2: {}
+  readdirp@5.1.1: {}
 
   registry-auth-token@5.1.0:
     dependencies:
@@ -5687,11 +5702,6 @@ snapshots:
 
   tinyexec@0.3.2: {}
 
-  tinyglobby@0.2.12:
-    dependencies:
-      fdir: 6.4.3(picomatch@4.0.2)
-      picomatch: 4.0.2
-
   tinypool@1.0.2: {}
 
   tinyrainbow@2.0.0: {}
@@ -5785,18 +5795,16 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-checker@0.9.0(eslint@9.39.1(jiti@2.4.2))(meow@13.2.0)(optionator@0.9.4)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)):
+  vite-plugin-checker@0.14.5(eslint@9.39.1(jiti@2.4.2))(meow@13.2.0)(optionator@0.9.4)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)):
     dependencies:
-      '@babel/code-frame': 7.26.2
-      chokidar: 4.0.3
+      '@babel/code-frame': 7.29.7
+      chokidar: 5.0.0
       npm-run-path: 6.0.0
       picocolors: 1.1.1
-      picomatch: 4.0.2
-      strip-ansi: 7.1.0
+      picomatch: 4.0.7
+      proper-lockfile: 4.1.2
       tiny-invariant: 1.3.3
-      tinyglobby: 0.2.12
       vite: 6.2.0(@types/node@22.13.8)(jiti@2.4.2)
-      vscode-uri: 3.1.0
     optionalDependencies:
       eslint: 9.39.1(jiti@2.4.2)
       meow: 13.2.0
